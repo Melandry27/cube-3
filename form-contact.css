@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+}
+
+/*NAV BAR*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a582f;
+  padding: 10px;
+  color: white;
+  max-height: 8vh;
+}
+
+nav .nav-logo {
+  height: 10vh;
+  width: 10vh;
+  margin-right: 20px;
+}
+
+nav .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav .links {
+  display: flex;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav .download-btn {
+  background-color: #f6dd00;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*MAIN*/
+
+.form-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(26, 88, 47, 0.35);
+}
+
+.form-container #form {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+#form input,
+#form select,
+#form textarea {
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  padding: 0.5rem 0.2rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#form input:hover,
+#form select:hover,
+#form textarea:hover {
+  border-color: #7e7e7e;
+}
+
+#form input {
+  height: 16px;
+}
+
+#form select {
+  height: 36px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form button {
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  width: 80%;
+  background-color: #ff4444;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#form button:hover {
+  background-color: #c53434;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 12vh;
+  height: 12vh;
+  background-color: #1a582f;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}

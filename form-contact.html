@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form-contact.css" />
+    <title>Formulaire de Contact</title>
+  </head>
+  <style></style>
+
+  <body>
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <img src="./assets/Image 1.svg" alt="Logo" class="nav-logo" />
+        </div>
+        <div class="links">
+          <a href="#">Particulier</a>
+          <a href="#">Professionnel</a>
+        </div>
+      </div>
+
+      <a href="#" class="download-btn">Télécharger l'application</a>
+    </nav>
+    <div class="form-container">
+      <h2>Formulaire de Contact</h2>
+      <form action="#" method="post" id="form">
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" required placeholder="John" />
+
+        <label for="prenom">Prénom *</label>
+        <input
+          type="text"
+          id="prenom"
+          name="prenom"
+          required
+          placeholder="Doe" />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="role">Rôle *</label>
+        <select id="role" name="role" required>
+          <option value="particulier">Particulier</option>
+          <option value="professionnel">Professionnel</option>
+        </select>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer !</button>
+      </form>
+    </div>
+
+    <footer>
+      <div>
+        <h3><a href="accueil.html">Accueil</a></h3>
+      </div>
+      <div>
+        <h3><a href="mentions-legales.html">Mentions légales</a></h3>
+      </div>
+      <div>
+        <h3><a href="formulaire-contact.html">Nous contacter</a></h3>
+      </div>
+    </footer>
+  </body>
+</html>
