@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+}
+
+/*GENERAL*/
+
+.txt {
+  color: #fff;
+}
+
+.main-txt {
+  font-size: 1.4rem;
+}
+
+.second-txt {
+  font-size: 1.2rem;
+}
+
+.highlight {
+  color: #fffa65;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button-default {
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+  background-color: #fffa65;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  -webkit-text-stroke: 0.25px rgb(200, 200, 200); /* Pour les navigateurs basés sur WebKit (Chrome, Safari) */
+  text-stroke: 0.25px rgb(200, 200, 200);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    -webkit-text-stroke 0.3s ease, text-stroke 0.3s ease;
+}
+
+.button-default:hover {
+  background-color: #d9d456;
+  transform: scale(1.025);
+  -webkit-text-stroke: 0.25px rgb(255, 255, 255); /* Pour les navigateurs basés sur WebKit (Chrome, Safari) */
+  text-stroke: 0.25px rgb(255, 255, 255);
+}
+
+.scroll-icon {
+  height: 75px;
+  width: 75px;
+}
+.scroll-icon {
+  fill: #fff;
+}
+
+/*NAV BAR*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a582f;
+  padding: 10px;
+  color: white;
+  max-height: 8vh;
+  border-bottom: #113b1f solid 2px;
+}
+
+nav .nav-logo {
+  height: 10vh;
+  width: 10vh;
+  margin-right: 20px;
+}
+
+nav .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav .links {
+  display: flex;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/*Main*/
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  max-height: 90vh;
+  background-color: #1a582f;
+}
+
+.first-container .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-container .txt p {
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.first-container .img img {
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.first-container button {
+  margin-bottom: 40px;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fadeIn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
