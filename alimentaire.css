@@ -164,67 +164,126 @@ nav .links a {
 
 /*Main*/
 
-/*first-container*/
+/*alimentaire-first-container*/
 
-.first-container {
+.alimentaire-first-container {
   display: flex;
-  flex-direction: row;
-  height: 90vh;
-  max-height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
   background-color: #1a582f;
+  color: #fff;
   border-bottom: #113b1f solid 2px;
 }
 
-.first-container .txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.first-container .txt p {
-  width: 50%;
+.alimentaire-first-container h3 {
   text-align: center;
-  margin: 0;
-  margin-bottom: 2rem;
 }
 
-.first-container .img img {
-  height: 90vh;
-  max-height: 90vh;
+.alimentaire-first-container .icon-txt-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: start;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 50vh;
 }
 
-.first-container button {
-  margin-bottom: 40px;
+.alimentaire-first-container .card {
+  height: 35vh;
 }
-
-@media screen and (max-width: 1400px) {
-  .first-container .txt p,
-  .first-container .txt h3 {
-    width: 70%;
-  }
+.alimentaire-first-container .card svg {
+  height: 20vh;
 }
-
-@media screen and (max-width: 1100px) {
-  .first-container .txt p,
-  .first-container .txt h3 {
-    width: 90%;
-  }
+.alimentaire-first-container .card h3 {
+  height: 5vh;
+}
+.alimentaire-first-container .card p {
+  height: 10vh;
 }
 
 @media screen and (max-width: 1000px) {
-  .first-container {
-    justify-content: center;
-    flex-direction: column;
+  .alimentaire-first-container {
+    height: auto;
+    max-height: 300vh;
   }
-  .first-container .img img {
-    display: none;
+  .alimentaire-first-container .icon-txt-container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    max-height: 300vh;
+    align-items: center;
+  }
+  .alimentaire-first-container .icon-txt-container .card {
+    margin-bottom: 15vh;
   }
 }
 
-/*six-container*/
+/*alimentaire-second-container*/
 
-.six-container {
+.alimentaire-second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #eee9da;
+  color: #fff;
+  border-bottom: #113b1f solid 2px;
+}
+
+.alimentaire-second-container .center-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 60vh;
+  max-height: 60vh;
+  width: 60%;
+}
+
+.alimentaire-second-container .img img {
+  height: 70vh;
+}
+.alimentaire-second-container .txt {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 40px 0 0;
+  color: #1a582f;
+}
+
+.alimentaire-second-container .txt button {
+  width: 50%;
+}
+
+.alimentaire-second-container .icon-text-centered svg {
+  height: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+  .alimentaire-second-container {
+    height: 170vh;
+    max-height: 300vh;
+  }
+  .alimentaire-second-container .center-container {
+    flex-direction: column-reverse;
+  }
+  .alimentaire-second-container .txt {
+    padding: 0;
+  }
+  .alimentaire-second-container .img img {
+    width: 400px;
+  }
+}
+
+/*alimentaire-third-container*/
+
+.alimentaire-third-container {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -236,12 +295,12 @@ nav .links a {
   border-bottom: #113b1f solid 2px;
 }
 
-.six-container .main-txt {
+.alimentaire-third-container .main-txt {
   text-align: center;
   margin: 7vh auto;
 }
 
-.six-container .icon-txt-container {
+.alimentaire-third-container .icon-txt-container {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -252,7 +311,7 @@ nav .links a {
   max-height: 60vh;
 }
 
-.six-container .card {
+.alimentaire-third-container .card {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -260,44 +319,44 @@ nav .links a {
   height: 60vh;
   max-height: 60vh;
 }
-.six-container .card img {
+.alimentaire-third-container .card img {
   height: 45vh;
   width: 30vw;
 }
-.six-container .card h3 {
+.alimentaire-third-container .card h3 {
   height: 2vh;
   width: 75%;
 }
-.six-container .card p {
+.alimentaire-third-container.card p {
   height: 2vh;
   width: 75%;
 }
 
-.six-container button {
+.alimentaire-third-container button {
   width: 20%;
   margin-top: 12vh;
 }
 
 @media screen and (max-width: 1000px) {
-  .six-container {
+  .alimentaire-third-container {
     height: auto;
     max-height: 300vh;
   }
-  .six-container .icon-txt-container {
+  .alimentaire-third-container .icon-txt-container {
     flex-direction: column;
     width: 95%;
     height: auto;
     max-height: 300vh;
     align-items: center;
   }
-  .six-container .icon-txt-container .card {
+  .alimentaire-third-container .icon-txt-container .card {
     margin-bottom: 15vh;
   }
-  .six-container button {
+  .alimentaire-third-container button {
     width: 40%;
     margin: 0 0 10vh 0;
   }
-  .six-container .card img {
+  .alimentaire-third-container .card img {
     height: 45vh;
     width: 60vw;
   }

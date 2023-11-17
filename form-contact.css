@@ -52,6 +52,43 @@ nav .download-btn {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  nav .nav-logo {
+    height: 6vh;
+    width: 6vh;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 50vh;
+  }
+  nav .nav-logo {
+    margin-bottom: 10px;
+  }
+  nav .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .links a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .button-default {
+    margin: 10px 0;
+  }
+}
 /*MAIN*/
 
 .form-container {
