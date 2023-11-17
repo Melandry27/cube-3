@@ -11,7 +11,7 @@ body {
 }
 
 .main-txt {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .second-txt {
@@ -25,7 +25,7 @@ body {
 .highlight {
   color: #fffa65;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .button-default {
@@ -105,6 +105,8 @@ nav .links a {
 
 /*Main*/
 
+/*first-container*/
+
 .first-container {
   display: flex;
   flex-direction: row;
@@ -136,6 +138,8 @@ nav .links a {
 .first-container button {
   margin-bottom: 40px;
 }
+
+/*second-container*/
 
 .second-container {
   display: flex;
@@ -175,6 +179,8 @@ nav .links a {
 .second-container .card p {
   height: 10vh;
 }
+
+/*third-container*/
 
 .third-container {
   display: flex;
@@ -217,6 +223,8 @@ nav .links a {
   height: 75%;
 }
 
+/*fourth-container*/
+
 .fourth-container {
   display: flex;
   align-items: center;
@@ -254,6 +262,200 @@ nav .links a {
 }
 .fourth-container .card p {
   height: 10vh;
+}
+
+/*fith-container*/
+
+.fith-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #eee9da;
+  color: #fff;
+  border-bottom: #113b1f solid 2px;
+}
+
+.fith-container .center-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 60vh;
+  max-height: 60vh;
+  width: 60%;
+}
+
+.fith-container .img img {
+  height: 70vh;
+}
+.fith-container .txt {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 40px 0 0;
+  color: #1a582f;
+}
+
+.fith-container .txt button {
+  width: 50%;
+}
+
+.fith-container .icon-text-centered svg {
+  height: 75%;
+}
+
+/*six-container*/
+
+.six-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #1a582f;
+  color: #fff;
+  border-bottom: #113b1f solid 2px;
+}
+
+.six-container .main-txt {
+  text-align: center;
+  margin: 7vh auto;
+}
+
+.six-container .icon-txt-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: start;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 60vh;
+  max-height: 60vh;
+}
+
+.six-container .card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  max-height: 60vh;
+}
+.six-container .card img {
+  height: 45vh;
+  width: 30vw;
+}
+.six-container .card h3 {
+  height: 2vh;
+  width: 75%;
+}
+.six-container .card p {
+  height: 2vh;
+  width: 75%;
+}
+
+.six-container button {
+  width: 20%;
+  margin-top: 12vh;
+}
+
+/*FOOTER*/
+
+footer {
+  color: #1a582f;
+}
+
+.footer-layer1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-layer1 .layer1-1,
+.footer-layer1 .layer1-2,
+.footer-layer1 .layer1-3 {
+  width: 33%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-layer1 .layer1-3 {
+  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-layer1 .layer1-1 p,
+.footer-layer1 .layer1-2 p {
+  align-self: center;
+}
+
+.footer-layer1 .layer1-3 svg {
+  align-self: flex-start;
+  margin-right: 5px;
+}
+
+.footer-layer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-layer2 .footer-download-container,
+.footer-layer2 .copyright {
+  width: 50%;
+}
+
+.footer-layer2 .footer-download-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-layer2 img {
+  width: 150px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.footer-layer2 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-layer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-layer2 .footer-download-container,
+  .footer-layer2 .copyright {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-layer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-layer1 .layer1-1,
+  .footer-layer1 .layer1-2,
+  .footer-layer1 .layer1-3 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .footer-layer1 {
+    flex-direction: column;
+  }
 }
 
 .fadeIn {
