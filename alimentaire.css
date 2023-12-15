@@ -154,6 +154,7 @@ nav .links a {
 
   nav .links a {
     margin-right: 0;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
 
@@ -161,7 +162,6 @@ nav .links a {
     margin: 10px 0;
   }
 }
-
 /*Main*/
 
 /*alimentaire-first-container*/
