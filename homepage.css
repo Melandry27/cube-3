@@ -130,6 +130,10 @@ nav .links a {
     width: 6vh;
     margin-right: 5px;
   }
+  nav .links a {
+    min-height: 48px;
+    min-width: 48px;
+  }
 }
 
 @media screen and (max-width: 640px) {
