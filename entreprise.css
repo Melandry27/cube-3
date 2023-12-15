@@ -237,8 +237,8 @@ nav .links a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 68%;
-  width: 68%;
+  min-width: 70%;
+  width: 70%;
 }
 .entreprise-second-container .text-arrow-container {
   display: flex;
@@ -321,6 +321,11 @@ footer {
   justify-content: space-evenly;
 }
 
+.footer-layer1 a {
+  text-decoration: none;
+  color: #1a582f;
+}
+
 .footer-layer1 .layer1-1,
 .footer-layer1 .layer1-2,
 .footer-layer1 .layer1-3 {
@@ -365,6 +370,7 @@ footer {
 }
 
 .footer-layer2 img {
+  border-radius: 7px;
   width: 150px;
   cursor: pointer;
   margin: 0 10px;
@@ -376,23 +382,29 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .footer-layer2 {
     flex-direction: column;
     text-align: center;
   }
-
-  .footer-layer2 .footer-download-container,
+  .footer-layer2 .footer-download-container {
+    width: 100%;
+    margin: 10vh 0;
+  }
   .footer-layer2 .copyright {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 5vh 0;
   }
+  .footer-layer1 {
+    font-size: 0.9rem;
+  }
+}
 
+@media screen and (max-width: 768px) {
   .footer-layer1 {
     flex-direction: column;
     text-align: center;
   }
-
   .footer-layer1 .layer1-1,
   .footer-layer1 .layer1-2,
   .footer-layer1 .layer1-3 {

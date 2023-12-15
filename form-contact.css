@@ -4,6 +4,88 @@ body {
   font-family: Paytone One, Arial, Helvetica, sans-serif;
 }
 
+/*GENERAL*/
+
+.txt {
+  color: #fff;
+}
+
+.main-txt {
+  font-size: 1.6rem;
+}
+
+.second-txt {
+  font-size: 1.2rem;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.highlight {
+  color: #fffa65;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.button-default {
+  font-family: Paytone One, Arial, Helvetica, sans-serif;
+  background-color: #fffa65;
+  color: #1a582f;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-default:hover {
+  background-color: #d9d456;
+  transform: scale(1.025);
+}
+
+.scroll-icon {
+  height: 75px;
+  width: 75px;
+}
+.scroll-icon {
+  fill: #fff;
+}
+
+.icon-text-centered {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon-text-centered svg {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .main-txt {
+    font-size: 1.4rem;
+  }
+  .second-txt {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .button-default {
+    padding: 5px 7px;
+    font-size: 0.8rem;
+  }
+  .main-txt {
+    font-size: 1.2rem;
+  }
+  .second-txt {
+    font-size: 0.8rem;
+  }
+}
+
 /*NAV BAR*/
 
 nav {
@@ -14,6 +96,7 @@ nav {
   padding: 10px;
   color: white;
   max-height: 8vh;
+  border-bottom: #113b1f solid 2px;
 }
 
 nav .nav-logo {
@@ -40,16 +123,6 @@ nav .links a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
-}
-
-nav .download-btn {
-  background-color: #fffa65;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -153,19 +226,109 @@ nav .download-btn {
   background-color: #c53434;
 }
 
+/*FOOTER*/
+
 footer {
+  color: #1a582f;
+}
+
+.footer-layer1 {
   display: flex;
   justify-content: space-evenly;
-  max-height: 12vh;
-  height: 12vh;
-  background-color: #1a582f;
 }
 
-footer div {
-  text-align: center;
-}
-
-footer a {
+.footer-layer1 a {
   text-decoration: none;
-  color: #fff;
+  color: #1a582f;
+}
+
+.footer-layer1 .layer1-1,
+.footer-layer1 .layer1-2,
+.footer-layer1 .layer1-3 {
+  width: 33%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-layer1 .layer1-3 {
+  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-layer1 .layer1-1 p,
+.footer-layer1 .layer1-2 p {
+  align-self: center;
+}
+
+.footer-layer1 .layer1-3 svg {
+  align-self: flex-start;
+  margin-right: 5px;
+}
+
+.footer-layer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-layer2 .footer-download-container,
+.footer-layer2 .copyright {
+  width: 50%;
+}
+
+.footer-layer2 .footer-download-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-layer2 img {
+  border-radius: 7px;
+  width: 150px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.footer-layer2 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-layer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-layer2 .footer-download-container {
+    width: 100%;
+    margin: 10vh 0;
+  }
+  .footer-layer2 .copyright {
+    width: 100%;
+    margin: 5vh 0;
+  }
+  .footer-layer1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-layer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-layer1 .layer1-1,
+  .footer-layer1 .layer1-2,
+  .footer-layer1 .layer1-3 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .footer-layer1 {
+    flex-direction: column;
+  }
 }

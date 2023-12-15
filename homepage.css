@@ -277,6 +277,7 @@ nav .links a {
   margin: 20px 20px 0 0;
   height: 50px;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -350,6 +351,7 @@ nav .links a {
   margin: 20px 20px 0 0;
   height: 50px;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -387,6 +389,7 @@ nav .links a {
   align-items: center;
   justify-content: center;
   width: 80%;
+  padding-bottom: 10vh;
 }
 
 .homepage-fith-container .guide-card {
@@ -394,6 +397,10 @@ nav .links a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.homepage-fith-container .guide-card p {
+  text-align: center;
 }
 
 /*svg*/
@@ -436,6 +443,11 @@ footer {
 .footer-layer1 {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer-layer1 a {
+  text-decoration: none;
+  color: #1a582f;
 }
 
 .footer-layer1 .layer1-1,
@@ -482,6 +494,7 @@ footer {
 }
 
 .footer-layer2 img {
+  border-radius: 7px;
   width: 150px;
   cursor: pointer;
   margin: 0 10px;
@@ -493,23 +506,29 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .footer-layer2 {
     flex-direction: column;
     text-align: center;
   }
-
-  .footer-layer2 .footer-download-container,
+  .footer-layer2 .footer-download-container {
+    width: 100%;
+    margin: 10vh 0;
+  }
   .footer-layer2 .copyright {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 5vh 0;
   }
+  .footer-layer1 {
+    font-size: 0.9rem;
+  }
+}
 
+@media screen and (max-width: 768px) {
   .footer-layer1 {
     flex-direction: column;
     text-align: center;
   }
-
   .footer-layer1 .layer1-1,
   .footer-layer1 .layer1-2,
   .footer-layer1 .layer1-3 {
