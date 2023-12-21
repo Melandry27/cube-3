@@ -410,32 +410,32 @@ nav .links a {
 
 /*svg*/
 
-#Groupe_32 {
+.groupe32 {
   position: relative;
   width: 500px;
 }
 
-#chiffre {
+.chiffre {
   position: absolute;
   left: 0;
   transform: translate(30%, -12%);
   text-align: center;
 }
-#chiffre-reverse {
+.chiffre-reverse {
   position: absolute;
   left: 0;
   transform: translate(-30%, -12%);
   text-align: center;
 }
 
-#chiffre text,
-#chiffre-reverse text {
+.chiffre text,
+.chiffre-reverse text {
   font-size: 18px;
   fill: #1a582f;
 }
 
-#chiffre circle,
-#chiffre-reverse circle {
+.chiffre circle,
+.chiffre-reverse circle {
   fill: #fff;
 }
 
