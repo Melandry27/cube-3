@@ -187,7 +187,8 @@ nav .links a {
   align-items: center;
 }
 
-.homepage-first-container .txt p {
+.homepage-first-container .txt p,
+.homepage-first-container .txt h1 {
   width: 50%;
   text-align: center;
   margin: 0;

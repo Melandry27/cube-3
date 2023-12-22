@@ -175,7 +175,8 @@ nav .links a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(26, 88, 47, 0.35);
+  color: #fff;
+  background-color: #1a582f;
 }
 
 .form-container #form {

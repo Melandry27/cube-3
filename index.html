@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="homepage.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/Nouveau_projet_3.webp" />
-    <title>Acceuil - Rescuvia</title>
+    <link rel="icon" type="image/x-icon" href="/assets/nouveau-projet-3.ico" />
+    <title>Accueil - Rescuvia</title>
     <meta
       name="description"
       content="Avec Rescuvia, luttez contre le gaspillage alimentaire et vestimentaire tout en économisant votre argent." />
@@ -33,13 +33,13 @@
     <main>
       <div class="homepage-first-container">
         <div class="txt">
-          <p class="main-txt">
+          <h1 class="main-txt">
             Avec <span class="highlight">Rescuvia</span>,<br />luttons contre
             le<br />
             <span class="highlight">gaspillage alimentaire</span><br />
             et donnons<br />
             une <span class="highlight">seconde vie</span> à nos vêtements
-          </p>
+          </h1>
           <p class="second-txt">
             Le gaspillage alimentaire et le secteur vestimentaire sont des
             problèmes pour la planète, et nous essayons d'en être l'une des
@@ -88,7 +88,7 @@
       <div class="homepage-second-container">
         <div class="center-container">
           <div class="txt">
-            <h3>Consommer moins mais... consommer mieux !</h3>
+            <h2>Consommer moins mais... consommer mieux !</h2>
             <p>
               L'industrie du textile emmet 1,7 millions de tonnes de CO2 par
               ans, soit 10% des émissions de gaz à effets de serre.
@@ -114,7 +114,7 @@
       <div class="homepage-third-container">
         <div class="center-container">
           <div class="txt">
-            <h3>Sauver des invendus, lutter contre le gaspillage.</h3>
+            <h2>Sauver des invendus, lutter contre le gaspillage.</h2>
             <p>
               En France, ce sont 10 millions de tonnes de nourriture qui sont
               gâchées chaque année, représentant 16 milliards d’euros de perte.
@@ -469,19 +469,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var fadeInElement = document.querySelector(".fadeIn");
-
-        window.addEventListener("scroll", function () {
-          var fadeInPosition = fadeInElement.getBoundingClientRect().top;
-          var windowHeight = window.innerHeight;
-
-          if (fadeInPosition < windowHeight / 1.5) {
-            fadeInElement.classList.add("show");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
